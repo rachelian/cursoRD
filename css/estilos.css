@@ -1,0 +1,385 @@
+/*reglas: estan conformadas por selectores, declaraciones
+selectores*/
+
+
+/*header {
+    background: pink;
+}*/
+
+/*.link{
+    
+}*/
+body{
+    font-family: 'Source Sans Pro', sans-serif; 
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /*font-style: italic;*/
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;/*20% de un pixel menos*/
+    /*text-transform: uppercase; transformar en mayusculas, minusculas, etc
+    text-decoration: dashed;*/
+    margin: 0;
+    /*margin: 100px 520px 70px 30px;*/
+}
+h1 strong{
+    color: #026fff;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+.hero{
+    height: 300px;
+    /*background-image: url('../images/hero.jpg') ; */
+    background-color: #1b2127; 
+    /*background-size: 500px 300px;*/
+    /*background-repeat: no-repeat;*/ 
+    /*background-position-x: right;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image{
+    object-fit: cover;/*mantiene las dimensiones originales de las imagenes*/
+}
+
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
+}
+.project{
+    /*border-color: royalblue;
+    border-width: 15px;
+    border-style: solid;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+   /* margin: 10px; /*para todos los costados*/
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.project-course{
+    margin: 10px 0;
+}
+
+.project-date{
+    margin: 10px 0;
+}
+
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+}
+.project-details{
+    width: 50%; 
+    
+}
+
+.project-imageContainer{
+    width: 50%;
+    
+}
+
+.project-imageContainer img{
+    max-width: 100%;/*cómo hacer una imagen responsive*/
+}
+
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.header{
+    align-items: center;
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;/*para hacer que este elemento sea responsive, le agregamos este flex-wrap: wrap; para que se apilen los elementos. */
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*sin númeritos de lista*/
+}
+
+figure{
+    margin: 0;
+}
+
+
+.header a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.menu{
+    height: inherit;
+}
+
+.header ol{
+    display: flex; 
+    height: inherit;
+    align-items: center;
+}
+
+.header ol li{
+    height: inherit;
+    
+}
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.event-list{
+    display: flex; 
+    flex-wrap: wrap;
+    
+}
+.event-list-title{
+    margin-left: 20px;
+}
+.event{
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin: 1%;
+    overflow: hidden;
+    width: 48%;
+    background-color: #f4fbff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover; /*para que la imagen no se desconfigure*/
+}
+
+.event-detail{
+    background-color: white; 
+    margin: 20px 40px;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: center;
+}
+
+.event-url{
+    border: 1px solid;
+    border-radius: 5px;
+    color: #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+   
+     
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.social{
+   
+}
+.social-link{
+    background-size: 50px 50px;
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    width: 50px;
+}
+
+.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+    background-image: url('../images/github.svg');
+    
+}
+.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+    
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    background-image: url('../images/envelope.svg');
+    background-repeat: no-repeat; 
+    background-position-y: center;
+    background-position-x: 5px;
+    background-size: 15px 15px;
+    padding: 10px 20px 10px 25px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.container{
+    max-width: 1000px;/*antes era solo width y por eso era fijo. Ahora es flexible.*/
+    flex:1; /*combinación de flex wrap y shrink para que el elemento se amplie lo que más pueda*/
+    margin: 0 auto;
+    display: inherit;
+    height: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;/*heredado de event list*/
+}
+
+/*desktop fisrt empeza desde el MQ más grande*/
+
+@media screen and (max-width: 1024px){
+
+}
+    
+    
+@media screen and (max-width: 767px){
+        .header{
+            display: block;
+            height: auto; /*este alto se auto resetea, se adapata a las pantallas*/
+        }
+
+        .header ol{
+            display: block;
+        }
+
+        .header ol li{
+            height: 50px;            
+        }
+        .header a{
+            justify-content: center;
+        }
+        .header .logo{
+            text-align: center;
+        }
+        .project{
+            display: block;
+        }
+
+        .project-imageContainer{
+            width: auto;/*ajusta el ancho al tamaño disponible de la pantalla y da más rendimiento en la renderizada*/
+            text-align: center;
+        }
+
+        .project-details{
+            width: auto;
+            font-size: 16px;
+        }
+        .project-course, .project-date,  .project-url{
+            margin: .3em 0;
+        }
+        .project-title{
+            font-size: 1.5em;
+            margin-bottom: .3em;
+        }
+        .project-course{
+            font-size: .7em;
+        }
+        .project-date{
+            font-size: 1em;
+        }
+        .project-url{
+            font-size: 1em;
+        }
+        .project-description{
+            font-size: .8em;
+        }
+}
+
+@media screen and (max-width: 480px){
+    .project-details{       
+        font-size: 12px;
+    } 
+    
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button{
+        margin: 1em auto;/*con esta linea centramos el botón*/
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    .project-details{
+        width: auto;
+        font-size: 16px;
+    } 
+}
